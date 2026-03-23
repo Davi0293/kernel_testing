@@ -1808,10 +1808,7 @@ struct ipa_ipgre_info {
 	 * GRE header value.
 	 */
 	uint16_t gre_protocol;
-	/* If v6 tunnel: option header enabled then set "true"
-	 * If v4 tunnel: option header enabled then set "false"
-	 */
-	uint8_t ipv6_option_hdr_enabled;
+	uint8_t unused; /* for alignment */
 	/*
 	 * The number of valid elements in, and the accompanying
 	 * exception_list, below
